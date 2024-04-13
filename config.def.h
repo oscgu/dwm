@@ -42,6 +42,7 @@ static const Rule rules[] = {
     {"cs2", "cs2", NULL, 0, 0, 0, 1, -1, 1, 1},
     {"Zathura", NULL, NULL, 0, 0, 0, 0, -1, 0, 0},
     {"Deno",                          "deno",   "Peek preview",  0,          0,          0,         1,        1,           0,                  0},
+    {"Zathura",                          NULL,   NULL,  0,          0,          0,         1,        1,           0,                  0},
 };
 
 /* layout(s) */

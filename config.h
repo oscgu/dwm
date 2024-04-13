@@ -42,6 +42,7 @@ static const Rule rules[] = {
     {"cs2", "cs2", NULL, 0, 0, 0, 1, -1, 1, 1},
     {"Zathura", NULL, NULL, 0, 0, 0, 0, -1, 0, 0},
     {"Deno",                          "deno",   "Peek preview",  0,          0,          0,         1,        1,           0,                  0},
+    {"Zathura",                          NULL,   NULL,  0,          0,          0,         1,        1,           0,                  0},
 };
 
 /* layout(s) */
@@ -82,7 +83,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] =
     "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = {"dmenu_run",    "-fn", dmenufont,   "-nb",
+static const char *dmenucmd[] = {"dmenu_run", "-m", dmenumon,    "-fn", dmenufont,   "-nb",
                                  normbgcolor,    "-nf", normfgcolor, "-sb",
                                  selbordercolor, "-sf", selfgcolor,  NULL};
 static const char *termcmd[] = {"wezterm", NULL};
